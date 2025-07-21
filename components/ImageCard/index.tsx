@@ -164,11 +164,11 @@ const ImageCard = () => {
   return (
     <section className="py-[5.9375rem] flex flex-col justify-center gap-10 border-b border-[#007AB9] ">
       <div className="flex flex-col justify-center gap-[3.125rem]">
-        <h1 className="text-[2.8125rem] font-bold">Our Projects</h1>
-        <p className="text-2xl font-normal">
+        <h1 className="text-[2.8125rem] font-bold">Team</h1>
+        {/* <p className="text-2xl font-normal">
           We are a network of Rwandan open source developers contributing to
           open
-        </p>
+        </p> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20">
         {content.map((card) => (
