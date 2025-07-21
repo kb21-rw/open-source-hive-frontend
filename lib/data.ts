@@ -25,21 +25,21 @@ const imageContent = {
       logosIcon: null,
     },
     {
-      id: 1,
+      id: 4,
       title: "FirstName 4",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 4`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
-      id: 2,
+      id: 5,
       title: "FirstName 5",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 5`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
-      id: 3,
+      id: 6,
       title: "FirstName 6",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 6`,
       img: "/images/project.png",
@@ -51,12 +51,13 @@ const teamCard = {
   title: "Team",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
+  variant: "PRIMARY",
   cards: [
     {
       id: 1,
       title: "FirstName 1",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -82,7 +83,7 @@ const teamCard = {
       id: 2,
       title: "FirstName 2",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -108,7 +109,7 @@ const teamCard = {
       id: 3,
       title: "FirstName 3",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -134,7 +135,7 @@ const teamCard = {
       id: 4,
       title: "FirstName 4",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -160,7 +161,7 @@ const teamCard = {
       id: 5,
       title: "FirstName 5",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -186,7 +187,7 @@ const teamCard = {
       id: 6,
       title: "FirstName 6",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -213,7 +214,7 @@ const teamCard = {
       id: 7,
       title: "FirstName 7",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -239,7 +240,7 @@ const teamCard = {
       id: 8,
       title: "FirstName 8",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -268,12 +269,13 @@ const alumniCard = {
   title: "Alumni",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
+  variant: "PRIMARY",
   cards: [
     {
       id: 1,
       title: "FirstName 1",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -299,7 +301,7 @@ const alumniCard = {
       id: 2,
       title: "FirstName 2",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -325,7 +327,7 @@ const alumniCard = {
       id: 3,
       title: "FirstName 3",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -351,7 +353,7 @@ const alumniCard = {
       id: 4,
       title: "FirstName 4",
       content: null,
-      img: "/images/project.png",
+      img: "/images/profile.png",
       logosIcon: [
         {
           id: 1,
@@ -379,33 +381,34 @@ const alumniCard = {
 const logoCards = {
   title: "Our Partners",
   description: null,
+  variant: "SECONDARY",
   cards: [
     {
       id: 1,
       title: null,
       content: null,
-      img: "/images/project.png",
+      img: "/images/thegym.svg",
       logosIcon: null,
     },
     {
       id: 2,
       title: null,
       content: null,
-      img: "/images/project.png",
+      img: "/images/business.svg",
       logosIcon: null,
     },
     {
       id: 3,
       title: null,
       content: null,
-      img: "/images/project.png",
+      img: "/images/digital.svg",
       logosIcon: null,
     },
     {
       id: 4,
       title: null,
       content: null,
-      img: "/images/project.png",
+      img: "/images/minict.svg",
       logosIcon: null,
     },
   ],
