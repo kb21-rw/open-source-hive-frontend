@@ -1,7 +1,8 @@
+import TextContent from "@/components/TextContent";
 export default function Home() {
   return (
     <section className="h-screen">
-      <p>Open Source Hive </p>
+      <TextContent />
     </section>
   );
 }

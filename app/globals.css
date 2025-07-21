@@ -8,5 +8,5 @@ body {
 }
 
 .container {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-[96%] md:max-w-[92%] lg:max-w-[86%] mx-auto px-4 sm:px-6 lg:px-8;
 }
