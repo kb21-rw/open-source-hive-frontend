@@ -2,9 +2,9 @@ import React from "react";
 
 const TextContent = () => {
   return (
-    <div
+    <section
       id="about"
-      className="py-[5.9375rem] flex flex-col justify-center gap-[3.125rem]"
+      className="py-[5.9375rem] flex flex-col justify-center gap-[3.125rem] border-b border-[#007AB9]"
     >
       <h1 className="text-[2.8125rem] font-bold">About</h1>
       <p className="text-2xl font-normal">
@@ -13,7 +13,7 @@ const TextContent = () => {
         Rwanda&apos;s most intense software development trainee program. Most of
         us are alumni of The Gym&apos;s trainee program.
       </p>
-    </div>
+    </section>
   );
 };
 
