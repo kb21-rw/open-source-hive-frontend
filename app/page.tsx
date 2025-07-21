@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div>
+    <section className="h-screen">
       <p>Open Source Hive </p>
-    </div>
+    </section>
   );
 }

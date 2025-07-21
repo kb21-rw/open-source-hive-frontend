@@ -15,47 +15,45 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
-          <div className="flex-shrink-0 text-2xl font-bold text-primary cursor-pointer">
-            <Link href="/">Open Source Hive</Link>
-          </div>
+    <nav className="container shadow-md sticky py-10 top-0 left-0 right-0 bg-black z-50">
+      <div className="flex justify-between h-16 items-center">
+        {/* Logo */}
+        <div className="flex-shrink-0 text-5xl font-bold text-primary cursor-pointer">
+          <Link href="/">Open Source Hive</Link>
+        </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
-            {navMenu.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-gray-800 cursor-pointer hover:text-primary"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-800 cursor-pointer focus:outline-none"
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-8">
+          {navMenu.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className=" cursor-pointer text-xl font-bold hover:text-primary"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className=" cursor-pointer focus:outline-none"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg px-4 pt-2 pb-4 space-y-2">
+        <div className="md:hidden shadow-lg px-4 pt-2 pb-4 space-y-2">
           {navMenu.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="block text-gray-800 cursor-pointer hover:text-primary"
+              className="block cursor-pointer hover:text-primary"
               onClick={() => setIsOpen(false)}
             >
               {item.label}

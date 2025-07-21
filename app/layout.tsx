@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Arima } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const arimaSans = Arima({
@@ -22,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${arimaSans.variable} antialiased`}>
         <Navbar />
-        {children}
+        <div className="container">{children}</div>
+        <Footer />
       </body>
     </html>
   );
