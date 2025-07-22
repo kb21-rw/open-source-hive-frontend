@@ -25,12 +25,12 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex md:flex-wrap space-x-8 md:space-y-6">
+        <div className="hidden md:flex md:flex-wrap items-center gap-x-4">
           {navMenu.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className=" cursor-pointer text-xl font-bold hover:text-gray-400 whitespace-nowrap"
+              className=" cursor-pointer text-xl font-bold hover:text-gray-400 whitespace-nowrap m-0"
             >
               {item.label}
             </Link>
