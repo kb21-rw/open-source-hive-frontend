@@ -4,10 +4,12 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navMenu = [
-  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Rwanda’s Tech Ecosystem", href: "#rwanda-tech-ecosystem" },
+  { label: "Our Projects", href: "#our-projects" },
+  { label: "Team", href: "#team" },
+  { label: "Alumni", href: "#alumni" },
+  { label: "Partners", href: "#partners" },
 ];
 
 const Navbar = () => {
@@ -16,19 +18,19 @@ const Navbar = () => {
 
   return (
     <nav className="container shadow-md sticky py-10 top-0 left-0 right-0 bg-black z-50">
-      <div className="flex justify-between h-16 items-center">
+      <div className="flex justify-between gap-4 flex-wrap h-16 items-center">
         {/* Logo */}
-        <div className="flex-shrink-0 text-5xl font-bold text-primary cursor-pointer">
+        <div className="flex-shrink-0 text-3xl lg:text-5xl font-bold text-primary cursor-pointer">
           <Link href="/">Open Source Hive</Link>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex md:flex-wrap space-x-8 md:space-y-6">
           {navMenu.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className=" cursor-pointer text-xl font-bold hover:text-primary"
+              className=" cursor-pointer text-xl font-bold hover:text-gray-400 whitespace-nowrap"
             >
               {item.label}
             </Link>
@@ -53,7 +55,7 @@ const Navbar = () => {
             <Link
               key={item.href}
               href={item.href}
-              className="block cursor-pointer hover:text-primary"
+              className="block cursor-pointer hover:text-primary whitespace-nowrap"
               onClick={() => setIsOpen(false)}
             >
               {item.label}

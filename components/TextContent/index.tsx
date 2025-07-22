@@ -1,18 +1,19 @@
 import React from "react";
 
-const TextContent = () => {
+const TextContent = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) => {
   return (
     <section
       id="about"
       className="py-[5.9375rem] flex flex-col justify-center gap-[3.125rem] border-b border-[#007AB9]"
     >
-      <h1 className="text-[2.8125rem] font-bold">About</h1>
-      <p className="text-2xl font-normal">
-        We are a network of Rwandan open source developers contributing to open
-        technology projects globally. Our initiative is supported by The Gym -
-        Rwanda&apos;s most intense software development trainee program. Most of
-        us are alumni of The Gym&apos;s trainee program.
-      </p>
+      <h1 className="text-3xl lg:text-[2.8125rem] font-bold">{title}</h1>
+      <p className="text-2xl font-normal">{description}</p>
     </section>
   );
 };

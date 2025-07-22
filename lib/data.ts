@@ -1,3 +1,15 @@
+const about = {
+  title: "About Us",
+  description: ` We are a network of Rwandan open source developers contributing to open
+        technology projects globally. Our initiative is supported by The Gym -
+        Rwanda&'s most intense software development trainee program. Most of
+        us are alumni of The Gym's trainee program.`,
+};
+const rdatech = {
+  title: "Rwanda’s Tech Ecosystem",
+  description: `In our day jobs we work in Rwanda's thriving tech ecosystem, which you can learn more about here. [link to the techinruanda.de]`,
+};
+
 const imageContent = {
   title: "Our Projects",
   description:
@@ -51,7 +63,6 @@ const teamCard = {
   title: "Team",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
-  variant: "PRIMARY",
   cards: [
     {
       id: 1,
@@ -69,13 +80,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -95,13 +106,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -121,13 +132,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -147,13 +158,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -173,13 +184,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -199,13 +210,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -226,13 +237,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -252,13 +263,13 @@ const teamCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -269,7 +280,6 @@ const alumniCard = {
   title: "Alumni",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
-  variant: "PRIMARY",
   cards: [
     {
       id: 1,
@@ -287,13 +297,13 @@ const alumniCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -313,13 +323,13 @@ const alumniCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -339,13 +349,13 @@ const alumniCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -365,13 +375,13 @@ const alumniCard = {
           id: 2,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/linkedin.svg",
         },
         {
           id: 3,
           title: "logo",
           alternativeText: "logo",
-          url: "images/github.svg",
+          url: "images/internet.svg",
         },
       ],
     },
@@ -381,37 +391,33 @@ const alumniCard = {
 const logoCards = {
   title: "Our Partners",
   description: null,
-  variant: "SECONDARY",
+
   cards: [
     {
       id: 1,
-      title: null,
-      content: null,
+      label: "image",
+      url: "#",
       img: "/images/thegym.svg",
-      logosIcon: null,
     },
     {
       id: 2,
-      title: null,
-      content: null,
+      label: "image",
+      url: "#",
       img: "/images/business.svg",
-      logosIcon: null,
     },
     {
       id: 3,
-      title: null,
-      content: null,
+      label: "image",
+      url: "#",
       img: "/images/digital.svg",
-      logosIcon: null,
     },
     {
       id: 4,
-      title: null,
-      content: null,
+      label: "image",
+      url: "#",
       img: "/images/minict.svg",
-      logosIcon: null,
     },
   ],
 };
 
-export { teamCard, logoCards, imageContent, alumniCard };
+export { teamCard, logoCards, imageContent, alumniCard, about, rdatech };
