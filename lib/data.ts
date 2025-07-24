@@ -1,4 +1,5 @@
 const about = {
+  id: "about",
   title: "About Us",
   description: ` We are a network of Rwandan open source developers contributing to open
         technology projects globally. Our initiative is supported by The Gym -
@@ -6,53 +7,55 @@ const about = {
         us are alumni of The Gym's trainee program.`,
 };
 const rdatech = {
+  id: "rwanda-tech-ecosystem",
   title: "Rwanda’s Tech Ecosystem",
   description: `In our day jobs we work in Rwanda's thriving tech ecosystem, which you can learn more about here. [link to the techinruanda.de]`,
 };
 
 const imageContent = {
+  id: "our-projects",
   title: "Our Projects",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
   cards: [
     {
       id: 1,
-      title: "FirstName 1",
+      title: "FirstLastName 1",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
       id: 2,
-      title: "FirstName 2",
+      title: "FirstLastName 2",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 2`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
       id: 3,
-      title: "FirstName 3",
+      title: "FirstLastName 3",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 3`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
       id: 4,
-      title: "FirstName 4",
+      title: "FirstLastName 4",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 4`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
       id: 5,
-      title: "FirstName 5",
+      title: "FirstLastName 5",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 5`,
       img: "/images/project.png",
       logosIcon: null,
     },
     {
       id: 6,
-      title: "FirstName 6",
+      title: "FirstLastName 6",
       content: `Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 6`,
       img: "/images/project.png",
       logosIcon: null,
@@ -60,13 +63,14 @@ const imageContent = {
   ],
 };
 const teamCard = {
+  id: "team",
   title: "Team",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
   cards: [
     {
       id: 1,
-      title: "FirstName 1",
+      title: "FirstLastName 1",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -92,7 +96,7 @@ const teamCard = {
     },
     {
       id: 2,
-      title: "FirstName 2",
+      title: "FirstLastName 2",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -118,7 +122,7 @@ const teamCard = {
     },
     {
       id: 3,
-      title: "FirstName 3",
+      title: "FirstLastName 3",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -144,7 +148,7 @@ const teamCard = {
     },
     {
       id: 4,
-      title: "FirstName 4",
+      title: "FirstLastName 4",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -170,7 +174,7 @@ const teamCard = {
     },
     {
       id: 5,
-      title: "FirstName 5",
+      title: "FirstLastName 5",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -196,7 +200,7 @@ const teamCard = {
     },
     {
       id: 6,
-      title: "FirstName 6",
+      title: "FirstLastName 6",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -223,7 +227,7 @@ const teamCard = {
 
     {
       id: 7,
-      title: "FirstName 7",
+      title: "FirstLastName 7",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -249,7 +253,7 @@ const teamCard = {
     },
     {
       id: 8,
-      title: "FirstName 8",
+      title: "FirstLastName 8",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -277,13 +281,14 @@ const teamCard = {
 };
 
 const alumniCard = {
+  id: "alumni",
   title: "Alumni",
   description:
     "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris dignissim ante et Lorem ipsum dolor sit amet 1",
   cards: [
     {
       id: 1,
-      title: "FirstName 1",
+      title: "FirstLastName 1",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -309,7 +314,7 @@ const alumniCard = {
     },
     {
       id: 2,
-      title: "FirstName 2",
+      title: "FirstLastName 2",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -335,7 +340,7 @@ const alumniCard = {
     },
     {
       id: 3,
-      title: "FirstName 3",
+      title: "FirstLastName 3",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -361,7 +366,7 @@ const alumniCard = {
     },
     {
       id: 4,
-      title: "FirstName 4",
+      title: "FirstLastName 4",
       content: null,
       img: "/images/profile.png",
       logosIcon: [
@@ -389,6 +394,7 @@ const alumniCard = {
 };
 
 const logoCards = {
+  id: "partners",
   title: "Our Partners",
   description: null,
 
@@ -396,25 +402,25 @@ const logoCards = {
     {
       id: 1,
       label: "image",
-      url: "#",
+      url: "https://www.the-gym.rw",
       img: "/images/thegym.svg",
     },
     {
       id: 2,
       label: "image",
-      url: "#",
+      url: "https://gbs.rw/",
       img: "/images/business.svg",
     },
     {
       id: 3,
       label: "image",
-      url: "#",
+      url: "https://digicenter.rw/",
       img: "/images/digital.svg",
     },
     {
       id: 4,
       label: "image",
-      url: "#",
+      url: "https://www.minict.gov.rw/",
       img: "/images/minict.svg",
     },
   ],
