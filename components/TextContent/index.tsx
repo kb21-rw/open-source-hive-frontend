@@ -17,7 +17,7 @@ const TextContent = ({
       <h1 className="text-3xl lg:text-[2.8125rem] font-bold">{title}</h1>
       <div
         dangerouslySetInnerHTML={{ __html: description }}
-        className="text-2xl font-normal [&_a]:text-[#007AB9][&_a]:underline"
+        className="text-2xl font-normal [&_a]:text-blue-500 [&_a]:underline"
       />
     </section>
   );
