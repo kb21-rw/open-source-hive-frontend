@@ -20,11 +20,7 @@ const ImageCard = ({ id, title, description, cards }: any) => {
             key={card.id}
             className="relative flex flex-col gap-4 h-40 justify-center"
           >
-            <Link
-              href={card.link || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href={card.url} target="_blank" rel="noopener noreferrer">
               <Image
                 src={card.img}
                 alt={card.alternativeText || ""}
