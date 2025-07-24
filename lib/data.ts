@@ -2,14 +2,13 @@ const about = {
   id: "about",
   title: "About Us",
   description: ` We are a network of Rwandan open source developers contributing to open
-        technology projects globally. Our initiative is supported by The Gym -
-        Rwanda&'s most intense software development trainee program. Most of
+        technology projects globally. Our initiative is supported by The Gym-Rwanda's most intense software development trainee program. Most of
         us are alumni of The Gym's trainee program.`,
 };
 const rdatech = {
   id: "rwanda-tech-ecosystem",
   title: "Rwanda’s Tech Ecosystem",
-  description: `In our day jobs we work in Rwanda's thriving tech ecosystem, which you can learn more about here. [link to the techinruanda.de]`,
+  description: `In our day jobs we work in Rwanda's thriving tech ecosystem, which you can learn more about <a href="https://techinrwanda.org" target="_blank">here</a>`,
 };
 
 const imageContent = {
