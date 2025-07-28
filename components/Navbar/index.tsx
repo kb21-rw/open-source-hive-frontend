@@ -5,7 +5,6 @@ import { Menu, X } from "lucide-react";
 
 const navMenu = [
   { label: "About", href: "#about" },
-  { label: "Rwanda’s Tech Ecosystem", href: "#rwanda-tech-ecosystem" },
   { label: "Our Projects", href: "#our-projects" },
   { label: "Team", href: "#team" },
   { label: "Alumni", href: "#alumni" },
