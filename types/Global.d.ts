@@ -1,4 +1,5 @@
 import { Image } from "./Image";
+import { RichText } from "@/types/richText";
 
 export interface GlobalSettingsResponse {
   data: GlobalSettings;
@@ -15,22 +16,35 @@ export interface GlobalSettings {
   publishedAt: string;
   favicon: Image;
   footer: Footer;
-  navbarMenu: NavbarMenu[];
+  navbar: Navbar[];
   seo: SEO;
 }
 
-interface Footer {
+export interface Footer {
   id: number;
-  body: string;
+  body: RichText[];
 }
 
-interface NavbarMenu {
+export interface NavBar {
+  id: number;
+  logo: Logo;
+  menu: NavbarMenuItem[];
+}
+
+export interface Logo {
+  id: number;
+  logoText: string;
+  logoImage: Image | null;
+}
+
+export interface NavbarMenuItem {
   id: number;
   label: string;
-  link: Link[];
+  url: string;
+  isExternal: boolean;
 }
 
-interface SEO {
+export interface SEO {
   id: number;
   metaTitle: string;
   metaDescription: string;

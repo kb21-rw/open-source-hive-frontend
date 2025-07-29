@@ -3,7 +3,6 @@ import React from "react";
 import RichText from "../ui/RichText";
 
 const TextContent = ({ hash_tag, title, description }: ContentBlock) => {
-  console.log(description?.body);
   return (
     <section
       id={hash_tag || ""}
