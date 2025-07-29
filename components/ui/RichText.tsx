@@ -24,7 +24,7 @@ const RichText = ({ content }: RichTextType) => {
           ),
 
           paragraph: ({ children }) => {
-            return <div className="text-white">{children}</div>;
+            return <div>{children}</div>;
           },
 
           list: ({ children }) => (
@@ -37,7 +37,7 @@ const RichText = ({ content }: RichTextType) => {
             <Link
               key={"children?.props?.id"}
               href={url}
-              className="hover:text-[#007AB9]"
+              className="underline text-[#007AB9]"
               target="_blank"
               rel="noopener noreferrer"
             >

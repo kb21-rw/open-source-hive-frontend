@@ -10,7 +10,7 @@ const Navbar = ({ logo, menu }: NavBar) => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="container shadow-md sticky py-10 top-0 left-0 right-0 bg-black z-50">
+    <nav className="container shadow-md  w-full py-10 top-0 left-0 right-0 bg-black z-50">
       <div className="flex justify-between gap-4 flex-wrap h-16 items-center">
         {/* Logo */}
         <div className="flex-shrink-0 text-3xl lg:text-5xl font-bold text-primary cursor-pointer">
@@ -35,7 +35,7 @@ const Navbar = ({ logo, menu }: NavBar) => {
           {menu.map((item) => (
             <Link
               key={item.id}
-              href={item.url}
+              href={`#${item.url}`}
               className=" cursor-pointer text-xl font-bold hover:text-gray-400 whitespace-nowrap m-0"
             >
               {item.label}
@@ -60,7 +60,7 @@ const Navbar = ({ logo, menu }: NavBar) => {
           {menu.map((item) => (
             <Link
               key={item.id}
-              href={item.url}
+              href={`#${item.url}`}
               className="block cursor-pointer hover:text-primary whitespace-nowrap"
               onClick={() => setIsOpen(false)}
             >
