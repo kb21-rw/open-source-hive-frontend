@@ -1,29 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import Media from "./Media";
+import { ImageCard, SocialLogo } from "@/types/HomePage";
 
-const Card = ({
-  title,
-  content,
-  img,
-  logosIcon,
-}: {
-  title: string | null;
-  content: string | null;
-  img: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  logosIcon: any;
-}) => {
+const Card = ({ names, image, logos }: ImageCard) => {
   return (
     <div className="flex flex-col gap-4">
-      <Image src={img} alt={title || ""} width={1000} height={1000} />
-      {title && <h1 className="font-bold text-lg">{title}</h1>}
-      {content && <p className="text-lg">{content}</p>}
-      {logosIcon && (
+      <Image
+        src={image.url}
+        alt={image.alternativeText || image.name || ""}
+        width={1000}
+        height={1000}
+      />
+      {names && <h1 className="font-bold text-lg">{names}</h1>}
+      {logos && (
         <div className="flex gap-4">
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-          {logosIcon.map((card: any) => (
-            <Media {...card} key={card.id} />
+          {logos.map((card: SocialLogo) => (
+            <Media key={card.id} {...card} />
           ))}
         </div>
       )}

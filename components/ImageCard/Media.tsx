@@ -1,14 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialLogo } from "@/types/HomePage";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Media = ({ url, alternativeText, title }: any) => {
+const Media = ({ label, image, link }: SocialLogo) => {
   return (
-    <Link href="#" target="_blank" rel="noopener noreferrer">
+    <Link
+      href={link.url}
+      title={label}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Image
-        src={url}
-        alt={alternativeText + title}
+        src={image.url}
+        alt={image.alternativeText || image.name || ""}
         width={40}
         height={40}
         className="cursor-pointer"

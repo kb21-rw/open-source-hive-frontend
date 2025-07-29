@@ -2,7 +2,7 @@ import { fetchData } from "@/utils/api";
 
 export const getHomePage = async () => {
   try {
-    return await fetchData("home-page");
+    return await fetchData("homepage");
   } catch (error) {
     console.error("Error fetching home page:", error);
   }

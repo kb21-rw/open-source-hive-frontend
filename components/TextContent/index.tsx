@@ -1,24 +1,20 @@
+import { ContentBlock } from "@/types/HomePage";
 import React from "react";
+import RichText from "../ui/RichText";
 
-const TextContent = ({
-  id,
-  title,
-  description,
-}: {
-  id: string;
-  title: string;
-  description: string;
-}) => {
+const TextContent = ({ hash_tag, title, description }: ContentBlock) => {
+  console.log(description?.body);
   return (
     <section
-      id={id}
+      id={hash_tag || ""}
       className="py-[5.9375rem] flex flex-col justify-center gap-[3.125rem] border-b border-[#007AB9]"
     >
       <h1 className="text-3xl lg:text-[2.8125rem] font-bold">{title}</h1>
-      <div
-        dangerouslySetInnerHTML={{ __html: description }}
-        className="text-2xl font-normal [&_a]:text-blue-500 [&_a]:underline"
-      />
+      {description && (
+        <div className="text-2xl font-normal [&_a]:text-blue-500 [&_a]:underline">
+          <RichText content={description.body} />
+        </div>
+      )}
     </section>
   );
 };
