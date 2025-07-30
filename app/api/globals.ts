@@ -1,9 +1,6 @@
 import { fetchData } from "@/utils/api";
-import { GlobalSettingsResponse } from "@/types/Global";
 
-export const getGlobals = async (): Promise<{
-  data: GlobalSettingsResponse | null;
-}> => {
+export const getGlobals = async () => {
   try {
     const data = await fetchData("global");
     return data;
