@@ -16,7 +16,7 @@ export interface GlobalSettings {
   publishedAt: string;
   favicon: Image;
   footer: Footer;
-  navbar: Navbar[];
+  navbar: NavBar[];
   seo: SEO;
 }
 
@@ -33,7 +33,7 @@ export interface NavBar {
 
 export interface Logo {
   id: number;
-  logoText: string;
+  logoText: string | null;
   logoImage: Image | null;
 }
 

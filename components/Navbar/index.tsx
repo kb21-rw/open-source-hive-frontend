@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { type NavBar } from "@/types/Global";
 import Image from "next/image";
 
-const Navbar = ({ logo, menu }: NavBar) => {
+const Navbar = ({ id, logo, menu }: NavBar) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -34,7 +34,7 @@ const Navbar = ({ logo, menu }: NavBar) => {
         <div className="hidden md:flex md:flex-wrap items-center gap-x-4">
           {menu.map((item) => (
             <Link
-              key={item.id}
+              key={item.id + id}
               href={`#${item.url}`}
               className=" cursor-pointer text-xl font-bold hover:text-gray-400 whitespace-nowrap m-0"
             >

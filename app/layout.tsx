@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Arima } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import getGlobals from "./api/globals";
+import Navbar from "@/components/Navbar";
 
 const arimaSans = Arima({
   variable: "--font-arima-sans",
@@ -21,6 +21,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const { data } = await getGlobals();
+
   return (
     <html lang="en">
       <head>
@@ -44,9 +45,9 @@ export default async function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${arimaSans.variable} antialiased`}>
-        {data.navbar && <Navbar {...data.navbar} />}
+        {data?.navbar && <Navbar {...data.navbar} />}
         <div className="container">{children}</div>
-        {data.footer && <Footer {...data.footer} />}
+        {data?.footer && <Footer {...data.footer} />}
       </body>
     </html>
   );
