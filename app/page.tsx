@@ -7,9 +7,14 @@ import SiteLoadError from "@/error/SiteLoadError";
 
 export default async function Home() {
   try {
-    const { data: homepage }: { data: HomePageData } = await getHomePage();
+    const { data: homepage }: { data: HomePageData | null } =
+      await getHomePage();
 
-    if (!homepage || homepage.sections.length === 0) {
+    if (
+      !homepage ||
+      !Array.isArray(homepage.sections) ||
+      homepage.sections.length === 0
+    ) {
       return <NoHomepageData />;
     }
     return (

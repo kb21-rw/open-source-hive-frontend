@@ -1,11 +1,15 @@
 import { fetchData } from "@/utils/api";
+import { GlobalSettingsResponse } from "@/types/Global";
 
-export const getGlobals = async () => {
+export const getGlobals = async (): Promise<{
+  data: GlobalSettingsResponse | null;
+}> => {
   try {
-    return await fetchData("global");
+    const data = await fetchData("global");
+    return { data };
   } catch (error) {
     console.error("Error fetching site config:", error);
-    throw error;
+    return { data: null };
   }
 };
 
