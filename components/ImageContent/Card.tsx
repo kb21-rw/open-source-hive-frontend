@@ -5,7 +5,7 @@ import { ImageContentCard } from "@/types/HomePage";
 import RichText from "../ui/RichText";
 
 const Card = ({ title, description, image, link }: ImageContentCard) => {
-  const cardLink = link.isExternal ? link.url : `#${link.url}`;
+  const cardLink = link ? (link.isExternal ? link.url : `#${link.url}`) : "#";
   return (
     <Link href={cardLink} className="flex flex-col gap-4">
       <Image
