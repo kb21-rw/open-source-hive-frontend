@@ -9,7 +9,7 @@ export default async function Home() {
   try {
     const { data: homepage }: { data: HomePageData | null } =
       await getHomePage();
-
+    console.log(homepage);
     if (
       !homepage ||
       !Array.isArray(homepage.sections) ||

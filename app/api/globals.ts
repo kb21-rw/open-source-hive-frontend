@@ -6,7 +6,7 @@ export const getGlobals = async (): Promise<{
 }> => {
   try {
     const data = await fetchData("global");
-    return { data };
+    return data;
   } catch (error) {
     console.error("Error fetching site config:", error);
     return { data: null };
