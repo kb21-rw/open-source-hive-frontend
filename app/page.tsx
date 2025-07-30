@@ -7,8 +7,7 @@ import SiteLoadError from "@/error/SiteLoadError";
 
 export default async function Home() {
   try {
-    const { data: homepage }: { data: HomePageData | null } =
-      await getHomePage();
+    const { data: homepage }: { data: HomePageData } = await getHomePage();
     if (
       !homepage ||
       !Array.isArray(homepage.sections) ||
