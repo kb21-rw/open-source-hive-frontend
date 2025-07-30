@@ -4,9 +4,10 @@ import Link from "next/link";
 import { SocialLogo } from "@/types/HomePage";
 
 const Media = ({ label, image, link }: SocialLogo) => {
+  const mediaLink = link.isExternal ? link.url : `#${link.url}`;
   return (
     <Link
-      href={link.url}
+      href={mediaLink}
       title={label}
       target="_blank"
       rel="noopener noreferrer"

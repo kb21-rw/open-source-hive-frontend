@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { type LogoCard, LogoCardSection } from "@/types/HomePage";
 import RichText from "../ui/RichText";
+import Card from "./Card";
 
 const LogoCard = ({ hash_tag, header, cards }: LogoCardSection) => {
   return (
@@ -22,23 +21,7 @@ const LogoCard = ({ hash_tag, header, cards }: LogoCardSection) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20">
         {cards.map((card: LogoCard, index: number) => (
-          <div
-            key={card.id + index + card.title}
-            className="relative flex flex-col gap-4 h-40 justify-center"
-          >
-            <Link
-              href={card.link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={card.image.url}
-                alt={card.image.alternativeText || card.image.name || ""}
-                fill
-                className="object-contain cursor-pointer"
-              />
-            </Link>
-          </div>
+          <Card key={index + card.id + card.title} {...card} />
         ))}
       </div>
     </section>
