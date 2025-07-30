@@ -4,7 +4,7 @@ import Link from "next/link";
 import { SocialLogo } from "@/types/HomePage";
 
 const Media = ({ label, image, link }: SocialLogo) => {
-  const mediaLink = link.isExternal ? link.url : `#${link.url}`;
+  const mediaLink = link ? (link.isExternal ? link.url : `#${link.url}`) : "#";
   return (
     <Link
       href={mediaLink}
