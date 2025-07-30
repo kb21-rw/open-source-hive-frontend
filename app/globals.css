@@ -4,6 +4,10 @@
   --primary: #007AB9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #000000;
   color: #ffffff;
