@@ -15,8 +15,8 @@ const Media = ({ label, image, link }: SocialLogo) => {
       <Image
         src={image.url}
         alt={image.alternativeText || image.name || ""}
-        width={40}
-        height={40}
+        width={30}
+        height={30}
         className="cursor-pointer"
       />
     </Link>
