@@ -46,6 +46,7 @@ export default async function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${arimaSans.variable} antialiased`}>
+        <time dateTime="2016-10-25" suppressHydrationWarning />
         {data?.navbar && <Navbar {...data.navbar} />}
         <div className="container">{children}</div>
         {data?.footer && <Footer {...data.footer} />}
