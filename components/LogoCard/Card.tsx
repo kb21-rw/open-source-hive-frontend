@@ -5,7 +5,7 @@ import { LogoCard } from "@/types/HomePage";
 const Card = ({ title, link, image }: LogoCard) => {
   const cardLink = link ? (link.isExternal ? link.url : `#${link.url}`) : "#";
   return (
-    <div className="relative flex flex-col gap-4 h-40 justify-center">
+    <div className="relative flex flex-col gap-4 w-auto h-40 justify-center">
       <Link href={cardLink} target="_blank" rel="noopener noreferrer">
         <Image
           src={image.url}
