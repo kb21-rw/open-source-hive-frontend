@@ -19,7 +19,7 @@ const LogoCard = ({ hash_tag, header, cards }: LogoCardSection) => {
           </div>
         )}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20">
         {cards.map((card: LogoCard, index: number) => (
           <Card key={index + card.id + card.title} {...card} />
         ))}

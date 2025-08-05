@@ -11,7 +11,7 @@ const Card = ({ title, description, image, link }: ImageContentCard) => {
       <Image
         src={image.url}
         alt={image.alternativeText || image.name || ""}
-        width={1000}
+        width={2000}
         height={1000}
       />
       <h1 className="font-bold text-lg">{title}</h1>
