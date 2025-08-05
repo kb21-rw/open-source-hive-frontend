@@ -21,10 +21,10 @@ const ScrollToTop = () => {
   return isVisible ? (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-50 p-3 bg-[#007AB9] rounded-md bg-primary transition shadow-lg cursor-pointer"
+      className="fixed bottom-6 right-6 z-50 p-3 bg-[#007AB9] rounded-full bg-primary transition shadow-lg cursor-pointer"
       aria-label="Scroll to top"
     >
-      <Image src="/up-arrow.svg" alt="Up-arrow" width={24} height={24} />
+      <Image src="/up-arrow.svg" alt="Up-arrow" width={20} height={20} />
     </button>
   ) : null;
 };

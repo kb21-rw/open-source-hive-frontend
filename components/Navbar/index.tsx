@@ -36,7 +36,7 @@ const Navbar = ({ id, logo, menu }: NavBar) => {
             <Link
               key={item.id + id}
               href={`#${item.url}`}
-              className=" cursor-pointer text-xl font-bold hover:text-gray-400 whitespace-nowrap m-0"
+              className=" cursor-pointer text-xl font-bold hover:text-[#007AB9] whitespace-nowrap m-0"
             >
               {item.label}
             </Link>
