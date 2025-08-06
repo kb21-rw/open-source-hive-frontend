@@ -11,6 +11,7 @@ const Card = ({ names, image, logos }: ImageCard) => {
         alt={image.alternativeText || image.name || ""}
         width={1000}
         height={1000}
+        className="h-72 w-72 object-center object-cover"
       />
       {names && <h1 className="font-bold text-lg pt-1">{names}</h1>}
       {logos && (
