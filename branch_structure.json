@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "ft/change-team-image-color",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "ft/change-team-image-color": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "ft/change-team-image-color",
+    "origin"
+  ]
+}
