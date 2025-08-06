@@ -17,7 +17,7 @@ const Media = ({ label, image, link }: SocialLogo) => {
         alt={image.alternativeText || image.name || ""}
         width={30}
         height={30}
-        className="cursor-pointer"
+        className="cursor-pointer transform hover:scale-120 transition duration-400"
       />
     </Link>
   );
