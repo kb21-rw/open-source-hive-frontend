@@ -48,6 +48,7 @@ const Navbar = ({ id, logo, menu }: NavBar) => {
           <button
             onClick={toggleMenu}
             className=" cursor-pointer focus:outline-none"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

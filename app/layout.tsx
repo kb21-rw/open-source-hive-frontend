@@ -43,7 +43,6 @@ export default async function RootLayout({
           sizes="16x16"
           href={data?.favicon?.url}
         />
-        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${arimaSans.variable} antialiased`}>
         <time dateTime="2016-10-25" suppressHydrationWarning />
