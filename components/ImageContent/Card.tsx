@@ -15,7 +15,7 @@ const Card = ({ title, description, image, link }: ImageContentCard) => {
       />
       <h1 className="font-bold text-lg">{title}</h1>
       {description && (
-        <div className="text-lg">
+        <div className="text-lg text-justify">
           <RichText content={description.body} />
         </div>
       )}
