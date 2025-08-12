@@ -5,9 +5,8 @@ import { ImageContentCard } from "@/types/HomePage";
 import RichText from "../ui/RichText";
 
 const Card = ({ title, description, image, link }: ImageContentCard) => {
-  const cardLink = link ? (link.isExternal ? link.url : `#${link.url}`) : "#";
   return (
-    <Link href={cardLink} className="flex flex-col gap-4">
+    <Link href={link.url} target="_blank" className="flex flex-col gap-4">
       <Image
         src={image.url}
         alt={image.alternativeText || image.name || ""}
@@ -16,7 +15,7 @@ const Card = ({ title, description, image, link }: ImageContentCard) => {
       />
       <h1 className="font-bold text-lg">{title}</h1>
       {description && (
-        <div className="text-lg line-clamp-3 hover:line-clamp-none">
+        <div className="text-lg">
           <RichText content={description.body} />
         </div>
       )}
