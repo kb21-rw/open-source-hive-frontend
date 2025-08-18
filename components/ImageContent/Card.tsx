@@ -12,6 +12,7 @@ const Card = ({ title, description, image, link }: ImageContentCard) => {
         alt={image.alternativeText || image.name || ""}
         width={2000}
         height={1000}
+        className="h-72 object-center object-cover hover:scale-105 transition duration-400"
       />
       <h1 className="font-bold text-lg">{title}</h1>
       {description && (
